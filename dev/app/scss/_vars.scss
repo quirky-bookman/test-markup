@@ -1,0 +1,32 @@
+// vars
+$images: "../images/";
+$fonts: "../fonts/";
+
+// fonts
+$font-first: "Roboto", sans-serif;
+$font-second: "Montserrat", sans-serif;
+
+$breakpoints: (
+  xs: 450px,
+  sm: 575px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1441px
+);
+
+$grid-gutter-width: 30px;
+
+// color vars
+$color-primary: #3d8eda;
+$color-secondary: #929292;
+
+// base vars
+$body-text: #000000;
+$body-bg: #fafafa;
+$font-family-base: $font-first;
+$font-size-base: 1.4rem;
+$font-weight-base: 400;
+$line-height-base: 1;
+$links-color-base: inherit;
+$transition: all 0.3s ease;

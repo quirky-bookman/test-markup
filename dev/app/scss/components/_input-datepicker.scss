@@ -1,0 +1,59 @@
+.input-datepicker {
+  display: flex;
+  border-radius: 4px;
+  border: solid 1px #dedede;
+  overflow: hidden;
+
+  input {
+    font-family: $font-first;
+    padding: 0 8px;
+    min-width: 0;
+    flex-grow: 1;
+    font-size: 13px;
+    color: #636264;
+    border: none;
+
+    &::placeholder {
+      color: #636264;
+    }
+  }
+
+  .buttons-holder {
+    display: flex;
+    width: 53px;
+    flex-shrink: 0;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ebebeb;
+      padding: 1px;
+
+      &:hover {
+        background: darken(#ebebeb, 10);
+      }
+
+      &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+      }
+
+      &:first-child {
+        border-right: solid 1px #dedede;
+
+        &::before {
+          background-image: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.6569 16.2426L13.4142 12L17.6569 7.75736L16.2426 6.34315L12 10.5858L7.75736 6.34315L6.34315 7.75736L10.5858 12L6.34315 16.2426L7.75736 17.6569L12 13.4142L16.2426 17.6569L17.6569 16.2426Z' fill='%235F5F5F' /%3E%3C/svg%3E");
+        }
+      }
+
+      &:last-child {
+        &::before {
+          background-image: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 11H9V13H7V11ZM7 15H9V17H7V15ZM11 11H13V13H11V11ZM11 15H13V17H11V15ZM15 11H17V13H15V11ZM15 15H17V17H15V15Z' fill='%235F5F5F' /%3E%3Cpath d='M5 22H19C20.103 22 21 21.103 21 20V6C21 4.897 20.103 4 19 4H17V2H15V4H9V2H7V4H5C3.897 4 3 4.897 3 6V20C3 21.103 3.897 22 5 22ZM19 8L19.001 20H5V8H19Z' fill='%235F5F5F' /%3E%3C/svg%3E");
+        }
+      }
+    }
+  }
+}

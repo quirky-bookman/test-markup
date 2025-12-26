@@ -1,0 +1,70 @@
+.datepicker {
+  width: 100%;
+  max-width: 200px;
+
+  .datepicker-header {
+    width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .datepicker-controls {
+    align-items: center;
+  }
+
+  .view-switch {
+    font-family: $font-first;
+    font-size: 14px;
+  }
+
+  .next-button,
+  .prev-button {
+    font-family: $font-first;
+    font-size: 16px;
+  }
+
+  .dow {
+    max-width: 25px;
+    font-family: $font-first;
+    font-size: 13px;
+  }
+
+  .datepicker-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  .datepicker-view {
+    width: 175px;
+  }
+
+  .datepicker-grid {
+    // gap: 2px;
+
+    span {
+      font-family: $font-first;
+
+      &.day {
+        max-width: 25px;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &.month {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .datepicker-cell {
+    .selected {
+      font-weight: 400;
+      background: $color-primary;
+    }
+  }
+}

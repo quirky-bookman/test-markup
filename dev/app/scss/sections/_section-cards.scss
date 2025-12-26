@@ -1,0 +1,43 @@
+.section-cards {
+  position: relative;
+  z-index: 2;
+  padding-top: 18px;
+  padding-bottom: 60px;
+
+  .view-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 21px;
+    margin-bottom: 23px;
+
+    button {
+      padding: 0;
+      color: #c8c7c7;
+
+      &.active {
+        color: $color-primary;
+      }
+    }
+  }
+
+  .cards-holder {
+    &.list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &.grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px 8px;
+    }
+  }
+
+  .button-holder {
+    padding-top: 33px;
+    display: flex;
+    justify-content: center;
+  }
+}
